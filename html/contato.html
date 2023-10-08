@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Hora Marcada</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logoComprimida.ico">
+    <link rel="stylesheet" href="../css/stylehome.css">
+</head>
+
+<body>
+    <header class="menu">
+        <nav class="menu_botoes">
+            <a class="link_botao" href="home.html">Home</a>
+            <a class="link_botao" href="agendarAtendimento.html">Agendar atendimento</a>
+            <a class="link_botao" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo_section">
+            <img class="logo" src="../img/logoEditada.png" alt=""><br><br><br>
+            <form action="">
+                <label class="campo"><strong>Informações pessoais</strong></label><br><br>
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome" required><br><br>
+                <label for="celular">Celular</label>
+                <input type="number" name="celular" id="celular" required><br><br>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required><br><br><br>
+
+                <label class="campo"><strong>Categoria</strong></label><br><br>
+                <label><input type="radio" name="opcaoContato" value="duvida" required>Dúvida</label><br><br>
+                <label><input type="radio" name="opcaoContato" value="sugestao" required>Sugestão</label><br><br>
+                <label><input type="radio" name="opcaoContato" value="reclamacao" required>Reclamação</label><br><br><br>
+
+                <label class="campo"><strong>Detalhamento</strong></label><br><br>
+                <label for="obs">Observações</label><br>
+                <textarea name="message" placeholder="Campo opcional com 500 caracteres" maxlength="500" rows="6"
+                    cols="70" id="obs" name="obs"></textarea><br><br>
+
+                <div class="botoes">
+                    <button class="botoes_link" type="submit" onsubmit="">Enviar mensagem</button>
+                </div>
+            </form>
+    </main>
+    </section>
+    <footer class="descricao">
+        <p class="descricao_p">Desenvolvido por: Ana Julia</p>
+    </footer>
+</body>
+
+</html>
